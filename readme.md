@@ -7,3 +7,4 @@
 - Andres Jair Soto -[Andyelpoeta](https://github.com/AndresJairSotoADSI)
 - Walter Rolando Ayala Luna - [walisa2204](https://github.com/walisa2204)
 - Sergio Jaimes - [sjaimes16](https://github.com/sjaimes16)
+- Cristhian Sanchez - [CASM23](https://github.com/CASM23)

@@ -1,26 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+// Componente Pizza
+const Pizza = ({ nombre, ingredientes, precio }) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-         Hola mundo 
-         <br/>
-         desdes mi aplicacion en React Js
-        </p>
-        <a
-          className="App-link"
-          href="google.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Ir a Google
-        </a>
-      </header>
+    <div>
+      <h2>{nombre}</h2>
+      <p>Ingredientes: {ingredientes}</p>
+      <p>Precio: ${precio}</p>
     </div>
   );
-}
+};
+
+// Componente principal
+const App = () => {
+  // Estado para la cantidad de rebanadas
+  const [cantidadRebanadas, setCantidadRebanadas] = useState(8);
+
+  // Función para comer una rebanada
+  const comerRebanada = () => {
+    if (cantidadRebanadas > 0) {
+      setCantidadRebanadas(cantidadRebanadas - 1);
+    }
+  };
+
+  return (
+    <div>
+      <h1>¡Bienvenido a nuestra pizzería!</h1>
+      <Pizza nombre="Pizza de queso" ingredientes="Queso, salsa de tomate" precio={12} />
+      <p>Cantidad de rebanadas restantes: {cantidadRebanadas}</p>
+      <button onClick={comerRebanada}>Comer una rebanada</button>
+    </div>
+  );
+};
 
 export default App;

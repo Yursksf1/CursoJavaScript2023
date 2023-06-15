@@ -33,3 +33,10 @@ const App = () => {
 };
 
 export default App;
+
+
+/// Ejercicio:
+// con el objetivo de interactuar con el codigo base de este ejemplo, realizar las siguientes actividades
+// 1) instanciar mas pizzas para el componente App, ejemplo: ; champiñones, pollo, carnes, etc etc..
+// 2) agregar una funcionalidad, si las rebanadas son 0, agregar un menesaje de 'se acabo la pizza'
+// 3) agregar un parametro adicional al compomente pizza, que permita renderizar una imagen de la pizza. 

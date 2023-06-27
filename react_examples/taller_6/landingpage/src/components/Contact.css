@@ -1,0 +1,26 @@
+.contact {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    max-width: 300px;
+}
+
+.contact p {
+    color: rgb(7, 2, 157);
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact a {
+    color: rgb(0, 8, 118);
+}
+
+.contact img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.contact .resources {
+    text-align: center;
+
+}

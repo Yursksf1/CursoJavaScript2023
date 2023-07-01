@@ -7,6 +7,7 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import NewPage from './components/NewPage';
+import DetalleComponente from './components/DetalleComponente';
 import NotFoundPage from './components/NotFoundPage';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<HomePage/>}/>
+        <Route path="/componente/:id" element={DetalleComponente} />
         <Route exact path="/about" element={<AboutPage/>}/>
         <Route exact path="/contact" element={<ContactPage/>}/>
         <Route exact path="/new" element={<NewPage/>}/>

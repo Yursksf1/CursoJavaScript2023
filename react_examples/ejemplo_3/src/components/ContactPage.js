@@ -7,6 +7,7 @@ function ContactPage(props) {
       <div>
         <NavBar></NavBar>
         <p>Esta es la pagina de contact</p> 
+        <img className="imagen" src='https://www.mercator-group.com/wp-content/uploads/2016/08/mercator-group-img-telefono-contacto.png' />    
       </div>
     );
   }

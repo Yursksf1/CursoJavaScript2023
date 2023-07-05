@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "403a0e5f-61b2-4fd0-802e-47afea34db30",
+		"name": "ReactJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "pexels",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "abkAfxuRwGYFhQGyDHMm3jDEAxqIhKNAOSW9gX2nPzMXqndUUxAZ5PwY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://api.pexels.com/v1/search?query=cat&per_page=40&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pexels",
+						"com"
+					],
+					"path": [
+						"v1",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "cat"
+						},
+						{
+							"key": "per_page",
+							"value": "40"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

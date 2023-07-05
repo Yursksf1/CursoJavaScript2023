@@ -18,7 +18,7 @@ function App() {
     console.log('Valor del campo de entrada:', inputValue);
 
     // Tu formula va aca
-    const newValorCalulado = inputValue * 100
+    const newValorCalulado = inputValue * 12
 
     setValorCalulado(newValorCalulado)
 

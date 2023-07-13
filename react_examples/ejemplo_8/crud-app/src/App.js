@@ -28,6 +28,14 @@ function App() {
     }));
   };
 
+  const handleInputChangeUpdate = event => {
+    const { name, value } = event.target;
+    setSelectedPost(prevState => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
   const handleCreatePost = () => {
     axios.post('https://jsonplaceholder.typicode.com/posts', newPost)
       .then(response => {
@@ -106,7 +114,7 @@ function App() {
             placeholder="Título"
             value={selectedPost.title}
             onChange={event =>
-              handleInputChange({
+              handleInputChangeUpdate({
                 target: { name: 'title', value: event.target.value },
               })
             }
@@ -116,7 +124,7 @@ function App() {
             placeholder="Contenido"
             value={selectedPost.body}
             onChange={event =>
-              handleInputChange({
+              handleInputChangeUpdate({
                 target: { name: 'body', value: event.target.value },
               })
             }

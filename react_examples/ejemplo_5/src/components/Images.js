@@ -6,16 +6,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Images() {
   const [photos, setPhotos] = useState([]);
 
+  const fetchPhotos = async () => {
+    const response = await fetch('https://api.pexels.com/v1/search?query=cat&per_page=40&page=1', {
+      headers: {
+        Authorization: 'abkAfxuRwGYFhQGyDHMm3jDEAxqIhKNAOSW9gX2nPzMXqndUUxAZ5PwY'
+      }
+    });
+    const data = await response.json();
+    setPhotos(data.photos);
+  };
+
   useEffect(() => {
-    const fetchPhotos = async () => {
-      const response = await fetch('https://api.pexels.com/v1/search?query=cat&per_page=40&page=1', {
-        headers: {
-          Authorization: 'abkAfxuRwGYFhQGyDHMm3jDEAxqIhKNAOSW9gX2nPzMXqndUUxAZ5PwY'
-        }
-      });
-      const data = await response.json();
-      setPhotos(data.photos);
-    };
     fetchPhotos();
   }, []);
 

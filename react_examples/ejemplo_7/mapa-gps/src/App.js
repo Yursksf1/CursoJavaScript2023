@@ -4,7 +4,7 @@ import MapaPlotly from './components/MapaPlotly';
 function App() {
   return (
     <div>
-      <h1>Mapa GPS con Plotly.js</h1>
+      <h1>Ubicaciones de parques de Bucaramanga</h1>
       <MapaPlotly />
     </div>
   );
